@@ -24,6 +24,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Custom -->
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+
   </head>
   <body>
 <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
@@ -194,12 +198,78 @@
               </div>
             </div>
           </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301);"></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3>Mulai Serius</h3>
+                <span>15 Mei 2027</span>
+              </div>
+              <div class="timeline-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus iste itaque pariatur atque impedit repellendus!</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300);"></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3>Tunangan</h3>
+                <span>22 Juni 2027</span>
+              </div>
+              <div class="timeline-body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ratione dolore accusantium veniam.</p>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
+
+<section id="gallery" class="gallery">
+  <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-10 text-center">
+      <span>Memori Perjalanan Cinta</span>
+      <h2>Galleri Foto</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero beatae maiores eos ipsam numquam.</p>
+    </div>
+  </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
+      <div class="col mt-3" >
+      <a href="https://picsum.photos/id/18/1200/768" data-lightbox="roadtrip" data-title="My caption">
+        <img src="https://picsum.photos/id/18/300/400"  alt="Gambar 1" class="img-fluid w-100 rounded">
+      </a>
+    </div>
+      <div class="col mt-3">
+      <a href="https://picsum.photos/id/15/1200/768" data-lightbox="roadtrip">
+        <img src="https://picsum.photos/id/15/300/400"  alt="Gambar 1" class="img-fluid w-100 rounded">
+      </a>
+    </div>
+      <div class="col mt-3">
+      <a href="https://picsum.photos/id/28/1200/768" data-lightbox="roadtrip">
+        <img src="https://picsum.photos/id/28/300/400"  alt="Gambar 1" class="img-fluid w-100 rounded">
+      </a>
+    </div>
+      <div class="col mt-3">
+      <a href="https://picsum.photos/id/32/1200/768" data-lightbox="roadtrip">
+        <img src="https://picsum.photos/id/32/300/400"  alt="Gambar 1" class="img-fluid w-100 rounded">
+      </a>
+    </div>
+      <div class="col mt-3">
+      <a href="https://picsum.photos/id/36/1200/768" data-lightbox="roadtrip">
+        <img src="https://picsum.photos/id/36/300/400"  alt="Gambar 1" class="img-fluid w-100 rounded">
+      </a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -211,5 +281,18 @@
 
   <script  src="assets/js/main.js"></script>
 
+  <script  src="assets/js/lightbox.js"></script>
+
+
+
+  <script type="text/javascript">
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': false,
+      // 'imageFadeDuration' : 400,
+      // 'wrapAround': true,
+      // 'alwaysShowNavOnTouchDevices': true
+    })
+</script>
   </body>
 </html>
